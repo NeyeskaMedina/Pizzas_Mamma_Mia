@@ -1,0 +1,172 @@
+/* Global */
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.855);
+}
+.active{
+    color: rgb(255, 255, 255);
+}
+/* NavBar */
+nav{
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-between;
+    background-color: rgb(126, 186, 255);
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+nav h3, h4{
+    margin: 0;
+    padding: 0;
+}
+nav h4{
+    cursor: pointer;
+}
+/* Banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw;
+}
+.banner{
+    background-image: url('./banner-pizza.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+}
+.banner h1, h5{
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+    color: white;
+}
+.banner h5{
+    padding-bottom: 2vw;
+    border-bottom: 0.5px solid rgba(220, 219, 219, 0.822);
+}
+/* Tarjeta de Pizzas */
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    gap: 1vw;
+}
+.cards h2{
+    border-top: 0.5px solid rgba(220, 219, 219, 0.822);
+}
+.cards .title{
+    border-bottom: 0.5px solid rgba(220, 219, 219, 0.822);
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+footer h5{
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-weight: 700;
+}
+/* Vista Detalles de la Pizza Seleccionada */
+.pizza{
+    display: flex;
+    border: 1px solid rgba(210, 209, 209, 0.876);
+    height: 80vh;
+    margin: 4vw;
+    gap: 2vw;
+}
+
+.pizza img{
+    width: 45vw;
+    height: 100%;
+}
+.pizza .foo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2vw;
+    border-top: 2px solid rgba(210, 209, 209, 0.876);
+}
+.pizza h1, h2{
+    padding-top: 2vh;
+}
+.pizza h1{
+    margin-right: 2vw;
+    border-bottom: 2px solid rgba(210, 209, 209, 0.876);
+}
+.pizza h5{
+    color: black;
+    text-align: left;
+    padding-bottom: 2vh;
+    font-weight: 700;
+}
+.pizza ul{
+    list-style: none;
+}
+.pizza .btnPizza{
+    height: 90%;
+}
+/* Vista Carrito */
+.cars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    width: 80%;
+    height: 85%;
+    background-color: rgba(224, 224, 224, 0.773);
+}
+.cars img{
+    width: 50px;
+    height: 50px;
+}
+.cars li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw;
+    border-bottom: 1px solid rgba(210, 209, 209, 0.876);
+}
+.cars .izq, .der{
+    display: flex;
+}
+.cars .der .price{
+    color: rgb(22, 211, 22);
+}
+.cars h5{
+    color: black;
+    width: 95%;
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: 1vw;
+}
+.cars ul{
+    padding: 0;
+    align-self: center;
+    margin: 0;
+    width: 85%;
+    background-color: white;
+}
+.cars h6, span{
+    padding: 1vw;
+    margin: 0;
+}
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+
+}
+.cars .total{
+    padding: 1vw;
+}
