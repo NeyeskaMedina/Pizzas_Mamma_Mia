@@ -32,7 +32,7 @@ nav h4{
     padding: 4vw;
 }
 .banner{
-    background-image: url('./banner-pizza.jpg');
+    background-image: url('https://pixabay.com/get/g567f614bdf9243555cd8bc26cf4e5f839d62b86da78fb0181871d2ed7b0c1299970288090dbd889a03c246b97b4d7e3d95a562d8c95d763035820a4d098c0cce_1280.jpg');
     background-repeat: no-repeat;
     background-position: center;
     position: sticky;
