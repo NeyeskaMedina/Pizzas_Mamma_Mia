@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useContext } from 'react';
 import { UserContext } from '../context/UserContext';
 import { addCarsPizza } from '../helpers/addCarsPizza';
+import { mayuscula } from "../helpers/mayuscula";
 
 
 export const Cards = () => {
@@ -42,7 +43,7 @@ export const Cards = () => {
         <Card style={{ width: '18rem' }} key={item["id"]} >
         <Card.Img variant="top" src={item["img"]} />
         <Card.Body>
-          <Card.Title className='title py-2'>{item["name"]}</Card.Title>
+          <Card.Title className='title py-2'>{mayuscula(item["name"])}</Card.Title>
               <ul>
                 {item["ingredients"].map(ing => (
                     <li>🍕 {ing}</li>

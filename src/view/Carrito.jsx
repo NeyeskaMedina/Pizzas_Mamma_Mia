@@ -3,6 +3,7 @@ import { UserContext } from "../context/UserContext";
 import Button from 'react-bootstrap/Button';
 import { formatoMoneda } from "../helpers/formatoMoneda";
 import { AumentarCarrito, DisminuirCarrito } from "../hook/HandleCarrito"
+import { mayuscula } from "../helpers/mayuscula";
 
 export const Carrito = () => {
 const { carro, total, setTotal, setCarro } = useContext(UserContext);
@@ -26,7 +27,7 @@ const handleSumar = ( pizza ) => {
                   <li>
                     <div className="izq">
                         <img src={item["img"]} alt="" />
-                        <h6>{item["name"]}</h6>
+                        <h6>{mayuscula(item["name"])}</h6>
                     </div>
                     <div className="der">
                         <h6 className="price">{formatoMoneda.format(item["quantity"] * item["price"])}</h6>

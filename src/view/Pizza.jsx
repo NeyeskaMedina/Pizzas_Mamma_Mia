@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addCarsPizza } from "../helpers/addCarsPizza";
+import { mayuscula } from "../helpers/mayuscula"
 
 export const Pizza = () => {
   const { id } = useParams();
@@ -39,7 +40,7 @@ export const Pizza = () => {
         <>
         <img src={item["img"]} alt="" />
         <div className="rigth">
-            <h1>{item["name"]}</h1>
+            <h1>{mayuscula(item["name"])}</h1>
             <p>{item["desc"]}</p>
             <h5>Ingredientes:</h5>
             <ul>
